@@ -1,38 +1,147 @@
-.App {
+.image-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image-links a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.image-links img {
+  max-width: 200px;
+  border: 2px solid #ede8ec4b;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.image-links img:hover {
+  transform: scale(1.05);
+}
+body{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('Components.js/pozadina.jpg');
+  color: white;
+  font-size: 20px;
+}
+.box {
+  float: left;
   text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+img{
+  width: 250px;
+  max-height: 250pxs;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{ 
+  text-align: center;
+  justify-content: center; 
+  align-items: center; 
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+}
+.uvod{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+a{
+  color:white
+
+}
+a:link{
+  color: white;
+}
+a:hover{
+  color: rgb(255, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer {
+  position: absolute;
+  bottom: 15vh; 
+  width: 100%;   
+  text-align: center;  
+  padding: 10px 0;  
+}
+::content{
+  min-height: 100%;
+}
+header{
+  min-height: 100%;
+}
+.input-field::placeholder {
+  font-size: 16px;  
+  color: #888;      
+  font-style: italic; 
+}
+.footer{
+  background-color: brown;
+  display: flex;
+  height: 10vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(67, 67, 67, 0.816);
+}
+.footer1{
+  margin: 5px 20px;
+}
+.footer2{
+  margin: 5px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center ;
+}
+.footer2 img{
+  height: 5vh;
+  width: 5vh;
+  
+}
+.footer1 h2{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.footer1 p{
+  font-size: 15px;
+}
+.footer2 h3{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.kupi{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.forma{
+margin: 0 auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  font-size: 18px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.forma button{
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+  margin-left: 35%;
 }
